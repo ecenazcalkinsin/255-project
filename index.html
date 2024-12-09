@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2024 - Fall - Project</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+        <div class="header">
+            <p id="ctis">CTIS</p>
+            <p id="crypto">Crypto Trading Information System</p>
+        </div>
+        <div id="profiles">
+            <p class="empty">Empty</p>
+        </div>
+        <div class="newProfile" onclick="showPopup()">
+            <p id="plus">+</p>
+            <p id="new">New Profile</p>
+        </div>
+       
+        <div id="overlay"></div>
+        <div id="popup">
+            <h3>New Profile</h3>
+            <input type="text" id="profileName" placeholder="Enter new profile...">
+            <button id="addProfile" onclick="addProfile()">Add</button>
+        </div>
+
+    
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="profiles_db.js"></script>
+        <script src="script.js"></script>
+       
+    
+</body>
+</html>
